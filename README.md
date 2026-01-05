@@ -1,6 +1,6 @@
 # VeloStyle Fullstack
 
-A 60-minute clothing delivery web application built with React frontend and Express.js backend, powered by Supabase.
+A clothing delivery web application built with React frontend and Express.js backend, powered by Supabase.
 
 ## 🚀 Quick Start
 
