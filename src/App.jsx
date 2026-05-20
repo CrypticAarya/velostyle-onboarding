@@ -1,26 +1,18 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Mission from './components/Mission';
-import ImpactMetrics from './components/ImpactMetrics';
-import FeaturedBrands from './components/FeaturedBrands';
-import WhyDhaaga from './components/WhyDhaaga';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Onboarding from './pages/Onboarding';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="min-h-screen bg-transparent">
-      <Navbar />
-      <main>
-        <Hero />
-        <Mission />
-        <ImpactMetrics />
-        <FeaturedBrands />
-        <div className="border-t border-dhaaga-border/60"></div>
-        <WhyDhaaga />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
